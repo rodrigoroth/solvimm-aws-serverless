@@ -1,0 +1,38 @@
+{
+  "Records": [
+    {
+      "eventVersion": "2.1",
+      "eventSource": "aws:s3",
+      "awsRegion": "us-east-1",
+      "eventTime": "2021-10-11T23:22:38.725Z",
+      "eventName": "ObjectCreated:Put",
+      "userIdentity": {
+        "principalId": "AWVUUZJPL9CE3"
+      },
+      "requestParameters": {
+        "sourceIPAddress": "177.16.220.82"
+      },
+      "responseElements": {
+        "x-amz-request-id": "XBG3GFMN98BFT0Q2",
+        "x-amz-id-2": "rqjlihdZpiUQCXpyf6ggeOL8b12AFeWMjdZJnlue/mlhegB1A6IzajpxCQbzGSi1OmL+M098cJi3/0gWDjZd0JwdZFC9m5sT"
+      },
+      "s3": {
+        "s3SchemaVersion": "1.0",
+        "configurationId": "35acc0b7-cad0-480f-b61a-1d6b2fdf8f23",
+        "bucket": {
+          "name": "solvimmimagebucket1",
+          "ownerIdentity": {
+            "principalId": "AWVUUZJPL9CE3"
+          },
+          "arn": "arn:aws:s3:::solvimmimagebucket1"
+        },
+        "object": {
+          "key": "uploads/tim-mossholder-ZrwPjbIrtzk-unsplash.jpg",
+          "size": 4071386,
+          "eTag": "ce25129348e816c1cc9e81cf73d2e6b5",
+          "sequencer": "006164C7467CEB89FA"
+        }
+      }
+    }
+  ]
+}
