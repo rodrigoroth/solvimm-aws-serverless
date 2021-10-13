@@ -7,10 +7,6 @@ provider:
   runtime: python3.7
   profile: administrator
   region: us-east-1
-  package:
-    exclude:
-      - node_modules/**
-      - venv/**
   environment:
     DYNAMODB_TABLE: ${self:service}-${opt:stage, self:provider.stage}
   iamRoleStatements:
@@ -24,8 +20,7 @@ provider:
         - dynamodb:DeleteItem
       Resource: "arn:aws:dynamodb:${opt:region, self:provider.region}:*:table/${self:provider.environment.DYNAMODB_TABLE}"
 
-plugins:
-  - serverless-python-requirements
+
 custom:
   pythonRequirements:
     pythonBin: python3
@@ -54,7 +49,7 @@ functions:
     timeout: 30
     events:
       - http:
-          path: images/{s3objectkey}
+          path: uploads/{s3objectkey}
           method: get
           cors: true
 
