@@ -16,7 +16,7 @@ Since it uses Pillow to read the image extracted, the only way that I finded to 
 was following this [tutorial](https://forums.aws.amazon.com/thread.jspa?threadID=309588):
 
 - Start with Amazon Linux on EC2 instance with 
-ssh -i <your-pem-file>.pem <your-instance-user>@<your-instance-public-dns>
+ssh -i your-pem-file.pem your-instance-user@your-instance-public-dns
 - aws configure (and enter in your credentials)
 - follow this commands:
 ```bash
